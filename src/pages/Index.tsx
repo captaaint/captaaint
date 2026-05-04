@@ -8,12 +8,15 @@ const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const links = [
+const personalLinks = [
   { icon: Instagram, label: "Instagram", handle: "@personal", href: "https://instagram.com" },
-  { icon: Camera, label: "Instagram — Photography", handle: "@photo", href: "https://instagram.com" },
   { icon: XIcon, label: "X / Twitter", handle: "@yourhandle", href: "https://x.com" },
   { icon: Linkedin, label: "LinkedIn", handle: "Your Name", href: "https://linkedin.com" },
   { icon: Github, label: "GitHub", handle: "@yourhandle", href: "https://github.com" },
+];
+
+const photoLinks = [
+  { icon: Camera, label: "Instagram — Photography", handle: "@photo", href: "https://instagram.com" },
   { icon: Camera, label: "Photography Portfolio", handle: "yourphoto.com", href: "https://example.com" },
 ];
 
@@ -53,11 +56,25 @@ const Index = () => {
         </header>
 
         {/* Links */}
-        <section className="mt-12 flex w-full flex-col gap-3" aria-label="Social links">
-          {links.map((link) => (
-            <SocialLink key={link.label} {...link} />
-          ))}
-        </section>
+        <div className="mt-12 flex w-full flex-col gap-8">
+          <section className="flex flex-col gap-3" aria-labelledby="personal-heading">
+            <h2 id="personal-heading" className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              Personal
+            </h2>
+            {personalLinks.map((link) => (
+              <SocialLink key={link.label} {...link} />
+            ))}
+          </section>
+
+          <section className="flex flex-col gap-3" aria-labelledby="photo-heading">
+            <h2 id="photo-heading" className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+              Photography
+            </h2>
+            {photoLinks.map((link) => (
+              <SocialLink key={link.label} {...link} />
+            ))}
+          </section>
+        </div>
 
         <footer className="mt-16 text-center text-xs text-muted-foreground">
           © {new Date().getFullYear()} · Crafted with care
