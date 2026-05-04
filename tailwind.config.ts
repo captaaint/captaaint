@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Raleway", "sans-serif"],
+        display: ["Playfair Display", "serif"],
+        serif: ["Playfair Display", "serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,11 +62,23 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "warm-gold": "hsl(var(--warm-gold))",
+        "warm-gold-light": "hsl(var(--warm-gold-light))",
+        "deep-dark": "hsl(var(--deep-dark))",
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "0",
+        md: "0",
+        sm: "0",
+        DEFAULT: "0",
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        image: "var(--shadow-image)",
+      },
+      letterSpacing: {
+        widest: "0.2em",
+        wider: "0.12em",
       },
       keyframes: {
         "accordion-down": {

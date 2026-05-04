@@ -4,84 +4,130 @@
 
 @layer base {
   :root {
-    /* Warm editorial palette inspired by Capshot Visuals */
-    --background: 35 30% 94%;
-    --foreground: 25 20% 18%;
+    /* Masculine elegant palette — cool charcoal & warm stone (from Capshot Visuals) */
+    --background: 30 10% 96%;
+    --foreground: 0 0% 38%;
 
-    --card: 35 35% 97%;
-    --card-foreground: 25 20% 18%;
+    --card: 30 10% 96%;
+    --card-foreground: 0 0% 12%;
 
-    --popover: 35 35% 97%;
-    --popover-foreground: 25 20% 18%;
+    --popover: 30 10% 96%;
+    --popover-foreground: 0 0% 12%;
 
-    --primary: 25 30% 28%;
-    --primary-foreground: 35 35% 96%;
+    --primary: 0 0% 12%;
+    --primary-foreground: 30 10% 96%;
 
-    --secondary: 32 25% 88%;
-    --secondary-foreground: 25 20% 22%;
+    --secondary: 30 6% 90%;
+    --secondary-foreground: 0 0% 12%;
 
-    --muted: 32 22% 90%;
-    --muted-foreground: 25 12% 42%;
+    --muted: 30 6% 90%;
+    --muted-foreground: 0 0% 33%;
 
-    --accent: 22 45% 55%;
-    --accent-foreground: 35 35% 96%;
+    --accent: 30 12% 38%;
+    --accent-foreground: 30 10% 96%;
 
-    --destructive: 0 60% 50%;
-    --destructive-foreground: 35 35% 96%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 30 10% 96%;
 
-    --border: 30 20% 82%;
-    --input: 30 20% 82%;
-    --ring: 22 45% 55%;
+    --border: 30 6% 86%;
+    --input: 30 6% 86%;
+    --ring: 0 0% 20%;
 
-    --radius: 0.25rem;
+    --radius: 0rem;
 
-    --gradient-glow: radial-gradient(ellipse at 50% 0%, hsl(32 40% 90% / 0.9), transparent 60%),
-                     radial-gradient(ellipse at 50% 100%, hsl(28 35% 88% / 0.7), transparent 55%);
-    --gradient-card: linear-gradient(180deg, hsl(35 35% 98% / 0.9), hsl(32 28% 93% / 0.7));
-    --shadow-elegant: 0 20px 60px -30px hsl(25 25% 25% / 0.25);
-    --shadow-soft: 0 1px 2px hsl(25 20% 20% / 0.04), 0 8px 24px -12px hsl(25 20% 20% / 0.08);
+    --warm-gold: 30 12% 38%;
+    --warm-gold-light: 30 8% 65%;
+    --deep-dark: 0 0% 8%;
+    --mid-gray: 0 0% 45%;
+    --light-gray: 30 6% 92%;
+    --section-alt: 30 8% 94%;
+    --shadow-soft: 0 4px 24px 0 hsl(0 0% 12% / 0.06);
+    --shadow-image: 0 10px 48px 0 hsl(0 0% 12% / 0.12);
   }
 }
 
 @layer base {
   * {
     @apply border-border;
+    box-sizing: border-box;
   }
 
   html {
-    font-family: 'Inter', system-ui, sans-serif;
-    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
   }
 
   body {
     @apply bg-background text-foreground;
-    background-image: var(--gradient-glow);
-    background-attachment: fixed;
-    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
   }
 
-  .font-display {
-    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-    letter-spacing: -0.01em;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
     font-weight: 400;
+    letter-spacing: -0.01em;
+    color: hsl(var(--card-foreground));
   }
 }
 
 @layer utilities {
-  .grain::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    opacity: 0.05;
-    z-index: 1;
-    mix-blend-mode: multiply;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  .font-display {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
   }
 
-  .hairline {
+  .font-quote {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .nav-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+    color: hsl(var(--muted-foreground));
+  }
+
+  .nav-link:hover {
+    color: hsl(var(--foreground));
+  }
+
+  .album-divider {
     height: 1px;
-    background: hsl(var(--foreground) / 0.25);
+    background: linear-gradient(90deg, transparent, hsl(var(--warm-gold) / 0.35), transparent);
+  }
+
+  .image-grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  @keyframes slideInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .slide-in-up {
+    animation: slideInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .slide-in-up { animation: none; }
   }
 }
