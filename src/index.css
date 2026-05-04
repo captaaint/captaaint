@@ -58,16 +58,16 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     letter-spacing: -0.01em;
     color: hsl(var(--card-foreground));
   }
@@ -75,15 +75,15 @@
 
 @layer utilities {
   .font-display {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     letter-spacing: -0.01em;
   }
 
   .font-quote {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
   }
 
   .text-balance {
@@ -91,7 +91,7 @@
   }
 
   .nav-link {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 0.7rem;
     letter-spacing: 0.2em;
