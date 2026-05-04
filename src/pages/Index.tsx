@@ -9,15 +9,15 @@ const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const personalLinks = [
-  { icon: Instagram, label: "Instagram", handle: "@personal", href: "https://instagram.com" },
-  { icon: XIcon, label: "X / Twitter", handle: "@yourhandle", href: "https://x.com" },
-  { icon: Linkedin, label: "LinkedIn", handle: "Your Name", href: "https://linkedin.com" },
-  { icon: Github, label: "GitHub", handle: "@yourhandle", href: "https://github.com" },
+  { icon: Instagram, label: "Instagram", handle: "@caaptaint", href: "https://www.instagram.com/caaptaint/" },
+  { icon: XIcon, label: "X / Twitter", handle: "@captaaint", href: "https://x.com/captaaint" },
+  { icon: Linkedin, label: "LinkedIn", handle: "kapitanytms", href: "https://www.linkedin.com/in/kapitanytms/" },
+  { icon: Github, label: "GitHub", handle: "@captaaint", href: "https://github.com/captaaint" },
 ];
 
 const photoLinks = [
-  { icon: Camera, label: "Instagram — Photography", handle: "@photo", href: "https://instagram.com" },
-  { icon: Camera, label: "Photography Portfolio", handle: "yourphoto.com", href: "https://example.com" },
+  { icon: Camera, label: "Instagram — Photography", handle: "@capshot.visuals", href: "https://www.instagram.com/capshot.visuals/" },
+  { icon: Camera, label: "Photography Portfolio", handle: "capshotvisuals.com", href: "https://capshotvisuals.com" },
 ];
 
 const Index = () => {
