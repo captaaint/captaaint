@@ -37,7 +37,7 @@ const Index = () => {
           </div>
 
           <h1 className="font-display text-5xl leading-[1.05] text-card-foreground whitespace-nowrap">
-            Tamás <em className="font-quote text-warm-gold">Kapitány</em>
+            Tamás <span className="text-warm-gold">Kapitány</span>
           </h1>
 
           <span className="nav-link mt-5">Freelance · Web & Photography</span>
