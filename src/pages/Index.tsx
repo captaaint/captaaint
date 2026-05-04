@@ -26,9 +26,9 @@ const Index = () => {
       <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col px-6 py-20 slide-in-up">
         {/* Profile */}
         <header className="flex flex-col items-center text-center">
-          <span className="nav-link mb-8">Tamás Kapitány</span>
+          <span className="nav-link mb-8">Freelance · Web & Photography</span>
 
-          <div className="relative mb-10 image-grain">
+          <div className="relative mb-10">
             <img
               src={avatar}
               alt="Tamás Kapitány — portrait"
@@ -38,15 +38,16 @@ const Index = () => {
             />
           </div>
 
-          <h1 className="font-display text-4xl leading-[1.1] text-card-foreground">
-            Freelance <em className="font-quote">web developer</em>
-            <br />& <em className="font-quote">photographer</em>
+          <h1 className="font-display text-5xl leading-[1.05] text-card-foreground">
+            Tamás
+            <br />
+            <em className="font-quote text-warm-gold">Kapitány</em>
           </h1>
 
           <div className="album-divider my-8 w-32" aria-hidden />
 
           <p className="max-w-xs text-balance text-sm leading-relaxed text-muted-foreground">
-            Crafting timeless digital experiences and natural-light portraits from Szeged, Hungary.
+            Freelance web developer & photographer crafting timeless digital experiences and natural-light portraits.
           </p>
 
           <div className="mt-8 inline-flex items-center gap-2 nav-link">
