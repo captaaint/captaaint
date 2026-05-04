@@ -16,8 +16,8 @@ const personalLinks = [
 ];
 
 const photoLinks = [
-  { icon: Camera, label: "Photography Portfolio", handle: "capshotvisuals.com", href: "https://capshotvisuals.com" },
-  { icon: Instagram, label: "Instagram — Photography", handle: "@capshot.visuals", href: "https://www.instagram.com/capshot.visuals/" },
+  { icon: Camera, label: "Website", handle: "capshotvisuals.com", href: "https://capshotvisuals.com" },
+  { icon: Instagram, label: "Instagram", handle: "@capshot.visuals", href: "https://www.instagram.com/capshot.visuals/" },
 ];
 
 const Index = () => {
@@ -40,9 +40,7 @@ const Index = () => {
             Tamás <span className="text-warm-gold">Kapitány</span>
           </h1>
 
-          <span className="nav-link mt-5">Freelance · Web & Photography</span>
-
-          <div className="album-divider my-8 w-32" aria-hidden />
+          <span className="nav-link mt-5 mb-8">Freelance · Web & Photography</span>
 
           <div className="inline-flex items-center gap-2 nav-link">
             <span className="relative flex h-1.5 w-1.5">
@@ -56,11 +54,10 @@ const Index = () => {
         {/* Links */}
         <div className="mt-20 flex w-full flex-col gap-14">
           <section aria-labelledby="personal-heading">
-            <div className="mb-2 flex items-baseline justify-between border-b border-card-foreground/30 pb-3">
-              <h2 id="personal-heading" className="nav-link text-card-foreground" style={{ color: "hsl(var(--card-foreground))" }}>
+            <div className="mb-2 border-b border-card-foreground/30 pb-3">
+              <h2 id="personal-heading" className="nav-link" style={{ color: "hsl(var(--card-foreground))" }}>
                 Personal
               </h2>
-              <span className="font-quote text-sm text-warm-gold">— 01</span>
             </div>
             <div className="flex flex-col">
               {personalLinks.map((link) => (
@@ -70,11 +67,10 @@ const Index = () => {
           </section>
 
           <section aria-labelledby="photo-heading">
-            <div className="mb-2 flex items-baseline justify-between border-b border-card-foreground/30 pb-3">
-              <h2 id="photo-heading" className="nav-link text-card-foreground" style={{ color: "hsl(var(--card-foreground))" }}>
+            <div className="mb-2 border-b border-card-foreground/30 pb-3">
+              <h2 id="photo-heading" className="nav-link" style={{ color: "hsl(var(--card-foreground))" }}>
                 Photography
               </h2>
-              <span className="font-quote text-sm text-warm-gold">— 02</span>
             </div>
             <div className="flex flex-col">
               {photoLinks.map((link) => (
