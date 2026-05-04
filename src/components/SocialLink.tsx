@@ -1,7 +1,8 @@
-import { ArrowUpRight, LucideIcon } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import type { ComponentType } from "react";
 
 interface SocialLinkProps {
-  icon: LucideIcon;
+  icon: ComponentType<{ className?: string }>;
   label: string;
   handle: string;
   href: string;
@@ -17,7 +18,7 @@ const SocialLink = ({ icon: Icon, label, handle, href }: SocialLinkProps) => {
     >
       <span className="absolute inset-0 -z-10 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" style={{ background: "var(--gradient-primary)", filter: "blur(20px)", transform: "scale(0.85)" }} />
       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-secondary text-foreground transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
-        <Icon className="h-5 w-5" strokeWidth={2} />
+        <Icon className="h-5 w-5" />
       </div>
       <div className="flex-1 min-w-0">
         <div className="font-display text-base font-semibold text-foreground">{label}</div>
