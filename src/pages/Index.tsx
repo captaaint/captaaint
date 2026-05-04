@@ -82,7 +82,6 @@ const Index = () => {
         </div>
 
         <footer className="mt-24 flex flex-col items-center gap-3 text-center">
-          <div className="album-divider w-16" aria-hidden />
           <p className="font-quote text-sm text-muted-foreground">
             © {new Date().getFullYear()} · Tamás Kapitány
           </p>
