@@ -1,7 +1,8 @@
-import { ArrowUpRight, LucideIcon } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import type { ComponentType, SVGProps } from "react";
 
 interface SocialLinkProps {
-  icon: LucideIcon;
+  icon: ComponentType<SVGProps<SVGSVGElement> & { strokeWidth?: number }>;
   label: string;
   handle: string;
   href: string;
