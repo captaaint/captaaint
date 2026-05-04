@@ -26,8 +26,6 @@ const Index = () => {
       <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col px-6 py-20 slide-in-up">
         {/* Profile */}
         <header className="flex flex-col items-center text-center">
-          <span className="nav-link mb-8">Freelance · Web & Photography</span>
-
           <div className="relative mb-10">
             <img
               src={avatar}
@@ -38,19 +36,15 @@ const Index = () => {
             />
           </div>
 
-          <h1 className="font-display text-5xl leading-[1.05] text-card-foreground">
-            Tamás
-            <br />
-            <em className="font-quote text-warm-gold">Kapitány</em>
+          <h1 className="font-display text-5xl leading-[1.05] text-card-foreground whitespace-nowrap">
+            Tamás <em className="font-quote text-warm-gold">Kapitány</em>
           </h1>
+
+          <span className="nav-link mt-5">Freelance · Web & Photography</span>
 
           <div className="album-divider my-8 w-32" aria-hidden />
 
-          <p className="max-w-xs text-balance text-sm leading-relaxed text-muted-foreground">
-            Freelance web developer & photographer crafting timeless digital experiences and natural-light portraits.
-          </p>
-
-          <div className="mt-8 inline-flex items-center gap-2 nav-link">
+          <div className="inline-flex items-center gap-2 nav-link">
             <span className="relative flex h-1.5 w-1.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-warm-gold opacity-75" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-warm-gold" />
