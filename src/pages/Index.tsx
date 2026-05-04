@@ -1,15 +1,20 @@
-import { Instagram, Twitter, Youtube, Github, Linkedin, Music2, Globe } from "lucide-react";
+import { Instagram, Linkedin, Github, Camera } from "lucide-react";
 import SocialLink from "@/components/SocialLink";
 import avatar from "@/assets/avatar.jpg";
 
+const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
+
 const links = [
-  { icon: Instagram, label: "Instagram", handle: "@yourhandle", href: "https://instagram.com" },
-  { icon: Twitter, label: "X / Twitter", handle: "@yourhandle", href: "https://twitter.com" },
-  { icon: Youtube, label: "YouTube", handle: "Your Channel", href: "https://youtube.com" },
-  { icon: Music2, label: "TikTok", handle: "@yourhandle", href: "https://tiktok.com" },
+  { icon: Instagram, label: "Instagram", handle: "@personal", href: "https://instagram.com" },
+  { icon: Camera, label: "Instagram — Photography", handle: "@photo", href: "https://instagram.com" },
+  { icon: XIcon, label: "X / Twitter", handle: "@yourhandle", href: "https://x.com" },
   { icon: Linkedin, label: "LinkedIn", handle: "Your Name", href: "https://linkedin.com" },
   { icon: Github, label: "GitHub", handle: "@yourhandle", href: "https://github.com" },
-  { icon: Globe, label: "Website", handle: "yourdomain.com", href: "https://example.com" },
+  { icon: Camera, label: "Photography Portfolio", handle: "yourphoto.com", href: "https://example.com" },
 ];
 
 const Index = () => {
