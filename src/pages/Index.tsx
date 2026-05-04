@@ -41,7 +41,7 @@ const Index = () => {
             Your Name
           </h1>
           <p className="mt-2 max-w-xs text-balance text-sm text-muted-foreground">
-            Designer, creator & storyteller. Welcome to my corner of the internet.
+            Webfejlesztő & fotós. Kódolok nappal, fényképezek éjjel.
           </p>
           <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
             <span className="relative flex h-2 w-2">
