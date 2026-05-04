@@ -4,43 +4,43 @@
 
 @layer base {
   :root {
-    /* Dark editorial palette — warm charcoal with stone accents */
-    --background: 30 6% 9%;
-    --foreground: 30 8% 75%;
+    /* Dark neutral palette — cool charcoal greys */
+    --background: 0 0% 8%;
+    --foreground: 0 0% 75%;
 
-    --card: 30 6% 11%;
-    --card-foreground: 30 12% 92%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 30 6% 11%;
-    --popover-foreground: 30 12% 92%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 30 12% 92%;
-    --primary-foreground: 30 6% 9%;
+    --primary: 0 0% 95%;
+    --primary-foreground: 0 0% 8%;
 
-    --secondary: 30 5% 16%;
-    --secondary-foreground: 30 12% 92%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 30 5% 16%;
-    --muted-foreground: 30 6% 60%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 30 14% 55%;
-    --accent-foreground: 30 6% 9%;
+    --accent: 0 0% 70%;
+    --accent-foreground: 0 0% 8%;
 
     --destructive: 0 65% 55%;
-    --destructive-foreground: 30 12% 92%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 30 6% 20%;
-    --input: 30 6% 20%;
-    --ring: 30 14% 55%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 70%;
 
     --radius: 0rem;
 
-    --warm-gold: 30 18% 60%;
-    --warm-gold-light: 30 14% 72%;
-    --deep-dark: 30 8% 5%;
-    --mid-gray: 30 6% 45%;
-    --light-gray: 30 6% 22%;
-    --section-alt: 30 6% 12%;
+    --warm-gold: 0 0% 75%;
+    --warm-gold-light: 0 0% 85%;
+    --deep-dark: 0 0% 4%;
+    --mid-gray: 0 0% 45%;
+    --light-gray: 0 0% 22%;
+    --section-alt: 0 0% 11%;
     --shadow-soft: 0 4px 24px 0 hsl(0 0% 0% / 0.4);
     --shadow-image: 0 20px 60px 0 hsl(0 0% 0% / 0.6);
   }
