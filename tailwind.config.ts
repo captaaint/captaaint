@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Raleway", "sans-serif"],
+        sans: ["Playfair Display", "serif"],
         display: ["Playfair Display", "serif"],
         serif: ["Playfair Display", "serif"],
       },
