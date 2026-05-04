@@ -22,51 +22,50 @@ const photoLinks = [
 
 const Index = () => {
   return (
-    <main className="grain relative min-h-screen overflow-hidden">
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col px-6 py-16">
+    <main className="relative min-h-screen">
+      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col px-6 py-20 slide-in-up">
         {/* Profile */}
         <header className="flex flex-col items-center text-center">
-          <div className="relative mb-8">
+          <span className="nav-link mb-8">Tamás Kapitány</span>
+
+          <div className="relative mb-10 image-grain">
             <img
               src={avatar}
               alt="Tamás Kapitány — portrait"
-              width={128}
-              height={128}
-              className="h-32 w-32 rounded-full object-cover shadow-[var(--shadow-elegant)] ring-1 ring-border"
+              width={144}
+              height={144}
+              className="h-36 w-36 object-cover shadow-image"
             />
           </div>
 
-          <p className="mb-3 text-[10px] uppercase tracking-[0.32em] text-muted-foreground">
-            Freelance · Web & Photography
-          </p>
-
-          <h1 className="font-display text-5xl leading-[1.05] text-foreground">
-            Tamás <em className="font-display italic text-accent">Kapitány</em>
+          <h1 className="font-display text-4xl leading-[1.1] text-card-foreground">
+            Freelance <em className="font-quote">web developer</em>
+            <br />& <em className="font-quote">photographer</em>
           </h1>
 
-          <div className="my-6 h-px w-12 bg-foreground/30" aria-hidden />
+          <div className="album-divider my-8 w-32" aria-hidden />
 
           <p className="max-w-xs text-balance text-sm leading-relaxed text-muted-foreground">
-            Freelance web developer & photographer crafting timeless digital experiences and natural-light portraits.
+            Crafting timeless digital experiences and natural-light portraits from Szeged, Hungary.
           </p>
 
-          <div className="mt-6 inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.28em] text-muted-foreground">
+          <div className="mt-8 inline-flex items-center gap-2 nav-link">
             <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-warm-gold opacity-75" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-warm-gold" />
             </span>
             Available for collabs
           </div>
         </header>
 
         {/* Links */}
-        <div className="mt-14 flex w-full flex-col gap-12">
+        <div className="mt-20 flex w-full flex-col gap-14">
           <section aria-labelledby="personal-heading">
-            <div className="mb-2 flex items-baseline justify-between border-b border-foreground/30 pb-2">
-              <h2 id="personal-heading" className="font-display text-xs uppercase tracking-[0.32em] text-foreground">
+            <div className="mb-2 flex items-baseline justify-between border-b border-card-foreground/30 pb-3">
+              <h2 id="personal-heading" className="nav-link text-card-foreground" style={{ color: "hsl(var(--card-foreground))" }}>
                 Personal
               </h2>
-              <span className="font-display text-xs italic text-muted-foreground">01</span>
+              <span className="font-quote text-sm text-warm-gold">— 01</span>
             </div>
             <div className="flex flex-col">
               {personalLinks.map((link) => (
@@ -76,11 +75,11 @@ const Index = () => {
           </section>
 
           <section aria-labelledby="photo-heading">
-            <div className="mb-2 flex items-baseline justify-between border-b border-foreground/30 pb-2">
-              <h2 id="photo-heading" className="font-display text-xs uppercase tracking-[0.32em] text-foreground">
+            <div className="mb-2 flex items-baseline justify-between border-b border-card-foreground/30 pb-3">
+              <h2 id="photo-heading" className="nav-link text-card-foreground" style={{ color: "hsl(var(--card-foreground))" }}>
                 Photography
               </h2>
-              <span className="font-display text-xs italic text-muted-foreground">02</span>
+              <span className="font-quote text-sm text-warm-gold">— 02</span>
             </div>
             <div className="flex flex-col">
               {photoLinks.map((link) => (
@@ -90,9 +89,9 @@ const Index = () => {
           </section>
         </div>
 
-        <footer className="mt-20 flex flex-col items-center gap-2 text-center">
-          <div className="h-px w-8 bg-foreground/20" aria-hidden />
-          <p className="font-display text-xs italic text-muted-foreground">
+        <footer className="mt-24 flex flex-col items-center gap-3 text-center">
+          <div className="album-divider w-16" aria-hidden />
+          <p className="font-quote text-sm text-muted-foreground">
             © {new Date().getFullYear()} · Tamás Kapitány
           </p>
         </footer>
