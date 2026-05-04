@@ -1,6 +1,7 @@
 import { Instagram, Linkedin, Github, Camera } from "lucide-react";
 import SocialLink from "@/components/SocialLink";
-import avatar from "@/assets/avatar.jpg";
+
+const avatar = "https://res.cloudinary.com/dex9lnark/image/upload/c_fill,g_face,w_900/me_dtnmbr";
 
 const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
