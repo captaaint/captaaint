@@ -41,7 +41,7 @@ const Index = () => {
             Tamás <span className="text-warm-gold">Kapitány</span>
           </h1>
 
-          <span className="nav-link mt-5 mb-8">Freelance · Web & Photography</span>
+          <span className="nav-link mt-5 mb-8">Freelance · Software Engineer & Photographer</span>
 
           <div className="inline-flex items-center gap-2 nav-link">
             <span className="relative flex h-1.5 w-1.5">
