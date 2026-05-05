@@ -12,7 +12,7 @@ const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
 const personalLinks = [
   { icon: Instagram, label: "Instagram", handle: "@caaptaint", href: "https://www.instagram.com/caaptaint/" },
   { icon: XIcon, label: "X / Twitter", handle: "@captaaint", href: "https://x.com/captaaint" },
-  { icon: Linkedin, label: "LinkedIn", handle: "kapitanytms", href: "https://www.linkedin.com/in/kapitanytms/" },
+  { icon: Linkedin, label: "LinkedIn", handle: "tamaskapitany", href: "https://www.linkedin.com/in/tamaskapitany/" },
   { icon: Github, label: "GitHub", handle: "@captaaint", href: "https://github.com/captaaint" },
 ];
 
