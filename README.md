@@ -12,4 +12,4 @@ Focused on UI/UX & Developer Experience
 - Instagram: [@caaptaint](https://www.instagram.com/caaptaint/)
 - X / Twitter: [@captaaint](https://x.com/captaaint)
 - LinkedIn: [tamaskapitany](https://www.linkedin.com/in/tamaskapitany/)
-- Photography: [capshotvisuals.com](https://capshotvisuals.com)
+- Photography: [capshotvisuals.hu](https://capshotvisuals.hu)
