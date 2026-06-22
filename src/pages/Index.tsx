@@ -17,7 +17,7 @@ const personalLinks = [
 ];
 
 const photoLinks = [
-  { icon: Camera, label: "Website", handle: "capshotvisuals.com", href: "https://capshotvisuals.com" },
+  { icon: Camera, label: "Website", handle: "capshotvisuals.hu", href: "https://capshotvisuals.hu" },
   { icon: Instagram, label: "Instagram", handle: "@capshot.visuals", href: "https://www.instagram.com/capshot.visuals/" },
 ];
 
